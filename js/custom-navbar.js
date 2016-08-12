@@ -21,7 +21,7 @@ navBar.click(function() {
 });
 
 $(document).ready(function() {
-  var url = window.location.href;
+  var url = window.location.href.split('#')[0];
   $(".navbar-nav>li").each(function(index, element) {
     var $child = $(element).children("a");
     if ($child[0].href == url || ($child.attr("href") == "#" && url.includes("projects"))) {
