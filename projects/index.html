@@ -1,0 +1,56 @@
+---
+layout: "default"
+title: "Projects"
+description: "Projects page has a list of projects done by George Waters. It also lists George Waters' GitHub repositories."
+keywords: "Projects, iOS Apps, Mobile Apps, GitHub Repositories"
+---
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 border"> 
+          <h2 class="page-heading">iOS Apps</h2>
+        </div>
+      </div>
+      {% assign projects = site.projects | sort: 'order' %}
+      {% for project in projects %}
+      {% if forloop.index == forloop.length %}
+      <div class="row project-row">
+      {% else %}
+      <div class="row border project-row">
+      {% endif %}
+        <div class="col-sm-4 col-sm-offset-1">
+          <a href="{{project.url}}"><img class="img-responsive center-block" src="/images/{{ project.icon }}" alt="{{ project.altText }}"></a>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1">
+          <h4 class="project-number border">0{{ forloop.index }}</h4>
+          <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+          <p>
+            {{ project.description }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 border"> 
+          <h2 class="page-heading">Github Repos <i class="fa fa-github" aria-hidden="true"></i></h2>
+        </div>
+      {% assign repos = site.repos | sort: 'order' %}
+      {% for repo in repos %}
+        {% assign loopIndex = forloop.index0 | modulo:4 %}
+        {% if loopIndex == 0 %}
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+        {% else %}
+          <div class="col-sm-2">
+        {% endif %}
+            <h3><a href="{{ repo.githubURL }}" target="_blank">{{ repo.title }}</a></h3>
+            <p>{{ repo.description }}</p>
+          </div>
+      {% endfor %}
+      </div>
+      <div class="row bottom-spacer">
+        <div class="col-sm-10 col-sm-offset-1 border-top">
+          <h5><a href="/contact">To see more or discuss possible work let's talk </a></h5>
+        </div>
+      </div>
+    </div>

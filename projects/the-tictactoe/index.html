@@ -1,0 +1,199 @@
+---
+layout: "default"
+title: "THE TicTacToe"
+icon: "thetictactoe_icon.png"
+icon:
+  small: "thetictactoe_icon_small.png"
+  regular: "thetictactoe_icon.png"
+  large: "thetictactoe_icon_og.png"
+description: "The app page for THE TicTacToe by George Waters. This is where all the details and information about the app can be found."
+keywords: "THE TicTacToe"
+---
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h2 class="page-heading text-center">THE TicTacToe</h2>
+          <a href="https://itunes.apple.com/us/app/the-tictactoe/id980808164?mt=8" target="_blank">
+            <img class="img-responsive center-block" src="/images/{{ page.icon.regular }}" alt="App Icon for The TicTacToe">
+          </a>
+          <h3 class="text-center paragraph-header"><strong>About</strong></h3>
+          <p class="extra-space-below">
+            THE TicTacToe has a fresh look and feel that makes it a great tic-tac-toe app
+            for the iPhone and iPad. It is completely customizable, letting you choose your
+            own colors for the X's and the O's as well as the board. You can also set custom
+            shapes for the X's and the O's to add a more personal touch to the game. THE
+            TicTacToe takes everything you like about playing the game on paper and adds
+            the convenience of a mobile device. Play the game anytime, anywhere and never
+            worry about running out of space to draw boards! THE TicTacToe also has the ability
+            for you to play by yourself, by providing an Artificial Intelligence (AI) you can
+            play against. Whether you consider yourself a tic-tac-toe master or a beginner
+            there's no need to worry, the AI can be set at 3 different difficulties, easy,
+            medium, or hard. But watch out! If you play on hard you are going up against a big
+            time competitor that won't ever let you get the better of it. So test your skills
+            and see how good you really are with THE TicTacToe!
+          </p>
+          <img class="img-responsive center-block shadow" src="/images/tttboarddraw.png" alt="An image of a board from THE TicTacToe with color">
+          <h5 class="text-center">
+            <a href="https://itunes.apple.com/us/app/the-tictactoe/id980808164?mt=8" target="_blank">
+              Download it now on the App Store!
+            </a>
+          </h5>
+          <h3 class="paragraph-header"><strong>Behind the Scenes</strong></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-push-5">
+          <p>
+            THE TicTacToe is a very interesting app. It has a very simple purpose and there are
+            not an overwhelming number of features. But at the same time, some of the logic and
+            code behind how it works is very cool. There are a few UI elements like the
+            <a href="https://github.com/dunkmann00/Flip-Label" target="_blank">Flip Label</a>,
+            the <a href="https://github.com/dunkmann00/ColorWheel" target="_blank">Color Wheel</a>,
+            and the <a href="https://github.com/dunkmann00/Popup-Gradual-Blur" target="_blank">Popup Background Blur</a>
+            that I created for this app that can easily be used in many different scenarios. Explaining how these
+            work is much more technical so I won't go into detail here, but feel free to check them out on my
+            <a href="https://github.com/dunkmann00" target="_blank">GitHub</a>. The one aspect
+            that I personally find fascinating, which is also the reason I made this app in the first
+            place, is the logic behind the game's AI. There is no predetermined box to select, no maze
+            of IF statements that the app iterates through, just a simple concept that can turn a machine
+            into a master strategist.
+          </p>
+          <p>
+            The algorithm behind the AI is very popular and very widely used. It is not a true AI
+            (as up to this point, no one has ever made a
+            "<a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank">true AI</a>"),
+            and there are many other kinds of AI's currently in use in things like
+            <a href="http://www.explainthatstuff.com/how-ocr-works.html" target="_blank">picture</a> & 
+            <a href="http://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition.htm" target="_blank">voice recognition</a>,
+            autonomous robots (including
+            <a href="https://www.udacity.com/course/viewer#!/c-ud120/l-2254358555/m-2374468553" target="_blank">autonomous cars</a>),
+            and <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/health/" target="_blank">medical diagnoses and therapy recommendations</a>.
+            Artificial Intelligence is growing in Computer Science and there are more and more things that tap into
+            different forms of AI everyday. The type of Artificial Intelligence THE TicTacToe uses is an algorithm
+            called minimax.
+          </p>
+          <p class="extra-space-below-md">
+            The minimax algorithm works very well when there are two players, a finite number of possibilities,
+            and when the end result should be a tie. It doesn't have to be used in exactly these scenarios
+            but it will work perfectly if these 3 requirements exist. Luckily for tic-tac-toe, it is a
+            two-player game, there are 9 spaces initially in which a move can be made, and if you play
+            the game correctly it should always result in a tie. The object of the algorithm is to find
+            the move that results in the best worse case scenario. This means the algorithm will find the
+            best move assuming the other player does everything perfectly. By doing this, it is limiting
+            (minimizing) the best (maximum) result of the other player. If the minimax algorithm is used
+            for each of the computer's turns it will always result in at least a draw and potentially a win
+            if the human player makes a sub-optimal move along the way.
+          </p>
+        </div>
+        <div class="col-md-4 col-md-offset-1 col-md-pull-6">
+          <img class="img-responsive center-block shadow" src="/images/tttboardsmileys.png" alt="An image of a board from THE TicTacToe with custom shapes">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <p class="extra-space-below extra-space-above-md">
+            But how can the computer know what is a good move and what is not a good move? Knowing what's good
+            and what's bad is absolutely essential for making a decision on which space to choose. When a person
+            plays, it is easy enough to look and see if there are vulnerable spaces or any spaces that would result
+            in a win. The computer determines this by assigning a value to each space. Except it is not always as
+            simple as seeing if a space will result in a win or loss on the next turn. The minimax algorithm determines
+            what the entire rest of the game could look like if you choose to go in each of the remaining spots. Many
+            different scenarios are played because it plays out each initial scenario until a conclusion is reached.
+            Lets look at an example to make this concept more clear:
+          </p>
+          <img class="img-responsive center-block" src="/images/tttminimaxlayout.png" alt="An example image of how the minimax algorithm works">
+          <ul id="minimax_example_steps">
+            <li>Board #1 calls the minmax algorithm and generates the current turn's 3 possible scenarios, boards #2, #3, and #4.</li>
+            <li>It checks to see if any of those boards are complete. If the board results in a win it counts that scenario as being worth +10, if the board is a loss it counts as -10 and if it is a draw it counts as 0. If there are more open spaces it again calls minmax and generates the next turn's possible scenarios for that board.</li>
+            <li>Board #2 is complete, so that counts as +10, but board #3 is not complete, so it calls minmax and generates the next turn's possible scenarios, boards #5 and #6.</li>
+            <li>Keep in mind, boards #5 and #6 are for the other player's turn, in this case player O. We will look to find the best possible move for player O, but a win for player O is a lose for player X so it counts as -10, while a player O loss counts as +10.</li>
+            <li>Board #5 is a win for player O so it counts as -10. Board #6 is still incomplete so we again call minimax and generate the next turn's possible scenarios, which in this case is just board #9.</li>
+            <li>It is player X's turn again and since board #9 is a victory it counts as +10.</li>
+            <li>Now that there are no more potential moves to be made, we can begin to determine the best move for each turn we went through. This is accomplished by starting at the turn that is the furthest into the future and working back to the first turn.</li>
+            <li>There is only one choice at the turn with board #9 and since that is on player X's turn that results in +10. This means board #6 has a value of +10. At the turn with boards #5 and #6 it is player O's turn so we look for player O's best case, which is the lowest possible score. Out of the two possible choices (-10, +10), board #5 has the -10 so that is the choice that will be made. This means board #3 has a value of -10.</li>
+            <li>We repeat this process for board #4 and find that it too results in a score of -10.</li>
+            <li>Now that each initial move has a value associated with it (+10, -10, -10) we can see that board #2, with a value of +10, provides the greatest value and is the move that would be selected by the minimax algorithm.</li>
+          </ul>
+          <p class="extra-space-below">
+            Below is an animation of the same example, this walks through each step described above.
+          </p>
+          <img class="img-responsive center-block" src="/images/tttminimaxlayoutanimation.gif" alt="An animation to help show how the minimax algorithm works.">
+          <p>
+            This might still seem complicated and that is okay. It can take a while to wrap your
+            head around minimax and understand why this always produces the best result. It is a
+            very simple concept but seems slightly more complex when you begin to break it down.
+            What makes it so powerful is that it will keep repeating the same process on itself
+            until it reaches the end. It keeps calling minimax on each board that is not
+            finished until it creates a board that is complete. In doing this, it knows
+            exactly which choice is the best choice that can be made.
+          </p>
+          <p>
+            If you still can't quite understand how minimax works, take a look at 
+            <a href="http://neverstopbuilding.com/minimax" target="_blank">Tic Tac Toe: Understanding The Minimax Algorithm</a>.
+            This is the site that I initially used when I was learning about the minimax algorithm
+            for tic-tac-toe. It has some good stuff on it, check it out.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h3 class="paragraph-header"><strong>Adjustments</strong></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+          <p>
+            In THE TicTacToe I made a few modifications to the pure minimax algorithm to make
+            the gameplay slightly more enjoyable. For starters there are different levels of
+            difficulty. If you were able to follow through my description of how minimax works
+            you might be thinking, if it is always perfect how can there be different levels of
+            difficulty? I achieved this by limiting how many turns the minimax algorithm is
+            allowed to go out. On the hard setting the algorithm is allowed to go out 8 turns.
+            This means it will always see every possible outcome and therefore, always be
+            perfect. The medium setting allows 4 turns to be evaluated, and the easy setting
+            allows just 2 turns to be evaluated. This allows the human player to "out-smart'
+            the computer by planning more than either 4 or 2 moves out and putting the computer
+            in situations it can't defend. This doesn't mean you'll always be able to beat it,
+            but it will at least be possible. Another modification is in putting more weight
+            on turns closer to the current turn and less weight further out into the future.
+            This does not seem absolutely necessary at first, but when the computer is in a
+            losing situation it becomes important. When playing on the lower two difficulties
+            the computer will find itself in scenarios where it knows its going to lose. With
+            every turn having equal weighting, once it discovers it will lose it basically
+            "gives up." What I mean by this is rather than prolonging the game another turn or
+            two, it picks any square because it knows in the long run it will lose. By putting
+            more weight on turns closer to the current turn it realizes it is better to lose 2
+            turns out than right away. This makes the computer again seem more human like in its
+            gameplay. One last modification I made to the minimax algorithm was by adding
+            randomization to its board square selection. In some scenarios, like when only one
+            square is occupied on the board, there are many equally viable options. But the
+            regular minimax approach would always select the same position for its move. For
+            example, if X is on the center square and every other square is unoccupied, minimax
+            for O would always put it in the top left square. While this isn't wrong, it can get
+            a little boring and seem less human. What THE TicTacToe will do is randomly select a
+            square when there are 2 or more equally optimal solutions. This is another a way of
+            improving the gameplay experience and making THE TicTacToe one of the best tic-tac-toe
+            apps in the App Store.
+          </p>
+          <p class="extra-space-below">
+            So there you have it. This is all the work going on in THE TicTacToe to make it
+            "understand" how to play the game. Now the next time you play you'll have a little
+            knowledge on how the computer makes its decisions. I think this is all really cool
+            and I hope you do too. Long live tic-tac-toe!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive center-block shadow" src="/images/tttdifficulty.png" alt="An image of the option to select different difficulties in THE TicTacToe">
+          <a href="https://itunes.apple.com/us/app/the-tictactoe/id980808164?mt=8" target="_blank">
+            <img class="img-responsive center-block" src="/images/{{ page.icon.small }}" alt="App Icon for THE TicTacToe">
+            <img id="app_store_badge" class="img-responsive center-block" src="/images/appstorebadge.svg" alt="App Store Badge">
+          </a>
+        </div>
+      </div>
+      <div class="row bottom-spacer">
+        <div class="col-sm-10 col-sm-offset-1 border-top">
+          <h5>Question? Comments.</h5>
+          <h5><a href="/contact">Let me know what you think of THE TicTacToe!</a></h5>
+        </div>
+      </div>
+    </div>

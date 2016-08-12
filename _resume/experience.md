@@ -1,0 +1,20 @@
+---
+name: "Work Experience"
+order: "2"
+entries:
+  - name: "Operations Manager - Infiniti Wealth Management"
+    date: "2010 - present"
+    description: "I recently was given the title Operations Manager at <a href=\"https://www.iwmria.com/\" target=\"_blank\">IWM</a> and now am responsible for much of the day-to-day management of client accounts and technology at the firm. I run performance reports and oversee our portfolio rebalancing tools to ensure everything is running smoothly. I am also involved in choosing which technologies the firm should be using to help operate more efficiently."
+  - name: "Apple Developer"
+    date: "2013 - present"
+    description: "After I discovered I would not be taking another programming course in college (the majority of my classes the final year were in finance) I looked to see what I could do on my own. I came across <a href=\"https://en.wikipedia.org/wiki/Xcode\" target=\"_blank\">XCode,</a> which led me to iOS development, and <a href=\"/projects\">3 App Store apps</a> later I couldn't be happier with my decision to become an Apple Developer."
+  - name: "Intern - Adirondack Funds"
+    date: "Spring 2013 - Spring 2014"
+    description: "I interned for a year with <a href=\"https://www.linkedin.com/in/stevegonick\" target=\"_blank\">Steve Gonick</a>, a Principal with the <a href=\"http://www.adirondackfunds.com/\" target=\"_blank\">firm</a>. I created spreadsheets for Steve that helped him better analyze his fund's performance. More importantly, Steve taught me how to present and handle myself in a professional yet personable manner when interacting with clients."
+  - name: "Sales Associate - American Eagle Outfitters"
+    date: "Summer 2012"
+    description: "I had a number of different duties while working at American Eagle. From greeting customers and helping them find the very best outfit, to working the register, I did a little of it all. I only worked there for a short period of time but I learned how to keep myself focused and on task even without a lot of supervision."
+  - name: "Cashier - Kobackers Market"
+    date: "2009 - 2010"
+    description: "My first job back in high school. I was a cashier and learned many of the fundamental skills that are needed to work with customers. One of these skills being the importance of keeping your cool even in hectic situations. Even as the lines got long and a customer's patience was short, it was essential to checkout each person quickly, while also addressing any issues they had. Keeping a clean workstation was also very important in a job like this as was being friendly and polite at all times."
+---

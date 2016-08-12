@@ -1,0 +1,167 @@
+.navbar-default .navbar-toggle .icon-bar:nth-child(2).animating{  
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transform: translate(0px, 6px) rotate(0deg);
+      -ms-transform: translate(0px, 6px) rotate(0deg);
+       -o-transform: translate(0px, 6px) rotate(0deg);
+          transform: translate(0px, 6px) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(2){  
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translate(0px, 6px) rotate(45deg);
+      -ms-transform: translate(0px, 6px) rotate(45deg);
+       -o-transform: translate(0px, 6px) rotate(45deg);
+          transform: translate(0px, 6px) rotate(45deg);
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(3).animating{
+  -webkit-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+  -webkit-transition-duration: 0.0s;
+       -o-transition-duration: 0.0s;
+          transition-duration: 0.0s;
+  -webkit-transition-delay: 0.125s;
+       -o-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  opacity: 0.0;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(3){
+  opacity: 0.0;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(4).animating{
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transform: translate(0px, -6px) rotate(0deg);
+      -ms-transform: translate(0px, -6px) rotate(0deg);
+       -o-transform: translate(0px, -6px) rotate(0deg);
+          transform: translate(0px, -6px) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(4){  
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translate(0px, -6px) rotate(-45deg);
+      -ms-transform: translate(0px, -6px) rotate(-45deg);
+       -o-transform: translate(0px, -6px) rotate(-45deg);
+          transform: translate(0px, -6px) rotate(-45deg);
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2).animating{ 
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transform: translate(0px, 6px) rotate(0deg);
+      -ms-transform: translate(0px, 6px) rotate(0deg);
+       -o-transform: translate(0px, 6px) rotate(0deg);
+          transform: translate(0px, 6px) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2){  
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+       -o-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3).animating{
+  -webkit-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+  -webkit-transition-duration: 0.0s;
+       -o-transition-duration: 0.0s;
+          transition-duration: 0.0s;
+  -webkit-transition-delay: 0.125s;
+       -o-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  opacity: 1.0;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3){
+  opacity: 1.0;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(4).animating{  
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transform: translate(0px, -6px) rotate(0deg);
+      -ms-transform: translate(0px, -6px) rotate(0deg);
+       -o-transform: translate(0px, -6px) rotate(0deg);
+          transform: translate(0px, -6px) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(4){ 
+  -webkit-transition-property: transform;
+       -o-transition-property: transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.125s;
+       -o-transition-duration: 0.125s;
+          transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+       -o-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
