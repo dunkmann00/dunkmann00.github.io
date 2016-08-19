@@ -45,8 +45,13 @@ function errorDisplay(jqXHR, textStatus, errorThrown) {
   $("#submit_button").prop("disabled", false);
   
   var errorHTMLString = "<div class=\"alert alert-danger alert-dismissible\" role=\"alert\">\n<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>";
-  for(i = 0; i < jqXHR.responseJSON.length; i++) {
-    errorHTMLString += "<li>" + jqXHR.responseJSON[i] + "</li>";
+  try {
+    for(i = 0; i < jqXHR.responseJSON.length; i++) {
+      errorHTMLString += "<li>" + jqXHR.responseJSON[i] + "</li>";
+    }
+  }
+  catch (e) {
+    errorHTMLString += "<li>Error</li>"
   }
   errorHTMLString += "</div>";
     
