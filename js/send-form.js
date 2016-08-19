@@ -1,25 +1,27 @@
-$("form").submit(processForm);
-
+$("form").validator().submit(processForm); //need .validator() to ensure event happens after
+                                           //bs-validator has been initialized
 function processForm (event) {
-  event.preventDefault();
+  if(!event.isDefaultPrevented()) {
+    event.preventDefault();
   
-  var $form = $("form");
-  var url = $form.attr("action");
+    var $form = $("form");
+    var url = $form.attr("action");
   
   
-  $("#loading_overlay").css("visibility", "visible");
-  overlayPadding();
-  $("i.fa.fa-refresh.fa-fixed").toggleClass("animate");
-  $("#submit_button").prop("disabled", true);
+    $("#loading_overlay").css("visibility", "visible");
+    overlayPadding();
+    $("i.fa.fa-refresh.fa-fixed").toggleClass("animate");
+    $("#submit_button").prop("disabled", true);
   
-  $.ajax({
-    type: "POST",
-    url: url,
-    data: $form.serialize(),
-    dataType: "json",
-    success: successDisplay,
-    error: errorDisplay
-  });
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $form.serialize(),
+      dataType: "json",
+      success: successDisplay,
+      error: errorDisplay
+    });
+  }
 }
 
 function successDisplay(result) {
