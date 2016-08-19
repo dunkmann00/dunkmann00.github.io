@@ -47,9 +47,7 @@ function errorDisplay(jqXHR, textStatus, errorThrown) {
     errorHTMLString += "<li>" + jqXHR.responseJSON[i] + "</li>";
   }
   errorHTMLString += "</div>";
-  
-  //$("#form_container").html(errorHTMLString + $("#form_container").html());
-  
+    
   $("#form_container").prepend(errorHTMLString);
   
   $("form").submit(processForm);
