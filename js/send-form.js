@@ -48,7 +48,9 @@ function errorDisplay(jqXHR, textStatus, errorThrown) {
   }
   errorHTMLString += "</div>";
   
-  $("#form_container").html(errorHTMLString + $("#form_container").html());
+  //$("#form_container").html(errorHTMLString + $("#form_container").html());
+  
+  $("#form_container").add(errorHTMLString);
   
   $("form").submit(processForm);
 }
