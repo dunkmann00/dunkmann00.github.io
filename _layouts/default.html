@@ -12,15 +12,12 @@
     
 {% include og.html %}
     
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    <link href="/css/custom-navbar.min.css" rel="stylesheet">
-    <link href="/css/main.min.css" rel="stylesheet">
-    <link rel="icon" href="/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700|Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
+{% include links.html %}
     
+    <script>
+{% include google-analytics.html %}
 
+    </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,5 +39,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom-navbar.js"></script>
+    {% if page.script %}
+    <script src="/js/{{ page.script }}"></script>
+    {% endif %}
   </body>
 </html>
