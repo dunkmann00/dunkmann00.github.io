@@ -50,7 +50,7 @@ function errorDisplay(jqXHR, textStatus, errorThrown) {
   
   //$("#form_container").html(errorHTMLString + $("#form_container").html());
   
-  $("#form_container").add(errorHTMLString);
+  $("#form_container").prepend(errorHTMLString);
   
   $("form").submit(processForm);
 }
