@@ -39,8 +39,10 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom-navbar.js"></script>
-    {% if page.script %}
-    <script src="/js/{{ page.script }}"></script>
+    {% if page.scripts %}
+    {% for script in page.scripts %}
+    <script src="/js/{{ script }}"></script>
+    {% endfor %}
     {% endif %}
   </body>
 </html>
