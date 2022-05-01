@@ -25,9 +25,3 @@ url: "https://www.georgeh2os.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 # theme: minima
-
-collections:
-  projects:
-    permalink: /projects/:title/
-  repos:
-  resume:
